@@ -29,7 +29,6 @@ export default{
 <AppBodyNav></AppBodyNav>
 <AppTopFooter></AppTopFooter>
 <AppBottomFooter></AppBottomFooter>
-
 </template>
 
 <style>
