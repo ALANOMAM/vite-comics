@@ -30,7 +30,8 @@ export default{
   margin-left: auto;
   margin-right: auto;
 }
+/*
  #content{
-    border: 1px white solid;
- }
+     border: 1px white solid;
+ }*/
 </style>

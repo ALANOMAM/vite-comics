@@ -58,7 +58,7 @@ export default{
 
 </template>
 
-<style>
+<style lang="scss">
 .container4{
   max-width: 1200px;
   height: 370px;
@@ -66,10 +66,16 @@ export default{
   margin-right: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  overflow-y: hidden;
+
+  img{
+    width: 500px;
+  }
 }
 
  #top-footer{
-    border: 1px white solid;
+    /* border: 1px white solid;*/
     background-image: url("/img/footer-bg.jpg");
      background-position: center;
      background-size: cover;
