@@ -50,6 +50,8 @@ export default{
             </li>
 
         </ul>
+
+        <img src="/img/dc-logo-bg.png" alt="">
        </div>
      </div>
 
@@ -60,9 +62,14 @@ export default{
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
  #top-footer{
     border: 1px white solid;
+    background-image: url("/img/footer-bg.jpg");
+    background-size: cover;
+    background-position: center;
  }
 </style>
