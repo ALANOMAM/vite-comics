@@ -35,7 +35,7 @@ $primaryColor:rgba(2, 130, 249, 1);
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 20px 0;
   display: flex;
 align-items:center;
 justify-content: space-between;
