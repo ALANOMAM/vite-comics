@@ -44,10 +44,11 @@ export default{
     <div id="top-footer">
         <div class="container4">
         <ul>
-            <li v-for="element in elements">
+            <li v-for="element in elements" class="list-title">
                 {{ element.title }}
-                <li v-for="listElement in element.list">{{ listElement }}</li>
+                <li v-for="listElement in element.list" class="list">{{ listElement }}</li>
             </li>
+            
 
         </ul>
 
@@ -72,4 +73,10 @@ export default{
     background-size: cover;
     background-position: center;
  }
+
+ .list{
+    color: gray;
+ }
+
+ 
 </style>

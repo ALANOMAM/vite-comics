@@ -21,7 +21,7 @@ export default{
 <img src="/img/dc-logo.png" alt="dc_logo">
 
 <ul>
-    <li v-for="link in links">{{link}}</li>
+    <li v-for="link in links" class="link">{{link}}</li>
 </ul>
   </div>
     </header>
@@ -52,12 +52,12 @@ justify-content: space-between;
     display: flex;
     gap: 30px;
 
-    li{
+    .link{
     font-weight: bolder;
    }
    
  
- li:active{
+ .link:active{
      color:$primaryColor;
     }
  }
