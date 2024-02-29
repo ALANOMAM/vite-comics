@@ -28,12 +28,14 @@ export default{
 
 </template>
 
-<style>
+<style lang="scss">
+$primaryColor:rgba(2, 130, 249, 1);
 
 .container{
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
   display: flex;
 align-items:center;
 justify-content: space-between;
@@ -41,11 +43,24 @@ justify-content: space-between;
 
  header{
     border: 1px white solid;
+    background-color: white;
+    color: black;
  }
 
  ul{
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+
+    li{
+    font-weight: bolder;
+   }
+   
+ 
+ li:active{
+     color:$primaryColor;
+    }
  }
+
+ 
 </style>
