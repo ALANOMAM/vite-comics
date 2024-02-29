@@ -14,14 +14,14 @@ export default{
 </script>
 
 <template>
-    <div id="content">
+    <div id="body-nav">
   <h1>questo è dove andrà la body nav </h1>
      </div>
 
 </template>
 
 <style>
- #content{
+ #body-nav{
     border: 1px white solid;
  }
 </style>

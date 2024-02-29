@@ -15,14 +15,14 @@ export default{
 </script>
 
 <template>
+    
     <header> 
-    <div class="container">  
+  <div class="container1">
 <img src="/img/dc-logo.png" alt="dc_logo">
 
 <ul>
     <li v-for="link in links">{{link}}</li>
 </ul>
-
   </div>
     </header>
 
@@ -31,7 +31,7 @@ export default{
 <style lang="scss">
 $primaryColor:rgba(2, 130, 249, 1);
 
-.container{
+.container1{
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;

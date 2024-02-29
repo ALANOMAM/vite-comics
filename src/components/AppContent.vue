@@ -15,12 +15,21 @@ export default{
 
 <template>
     <div id="content">
-  <h1>questo è dove andrà il content</h1>
+
+    <div class="container2">  
+  <h1> content goes here </h1>
+    </div>
+
      </div>
 
 </template>
 
 <style>
+.container2{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
  #content{
     border: 1px white solid;
  }
