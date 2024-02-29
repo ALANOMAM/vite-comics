@@ -7,6 +7,33 @@ export default{
     
     return{
 
+        options:[
+            { title:"DIGITAL COMICS",
+              image:"/img/buy-comics-digital-comics.png"
+            },
+
+            {
+             title:"DC MERCHANDISE",
+              image:"/img/buy-comics-merchandise.png"
+            },
+
+            {
+              title:"SUBSCRIPTION",
+              image:"/img/buy-comics-subscriptions.png"
+            },
+
+            {
+             title:"COMIC SHOP LOCATOR",
+             image:"/img/buy-comics-shop-locator.png"
+            },
+
+            {
+             title:"DC POWER VISA",
+              image:"/img/buy-dc-power-visa.svg"
+            }
+
+        ]
+
     }
   }
 
@@ -16,30 +43,12 @@ export default{
 <template>
     <div id="body-nav">
     <div class="container3">
-     <div class="icon">
-        <img src="/img/buy-comics-digital-comics.png" alt="">
-        <span>DIGITAL COMICS</span>
-    </div>
 
-     <div class="icon">
-        <img src="/img/buy-comics-merchandise.png" alt="">
-        <span>DC MERCHANDISE</span>
-    </div>
-
-     <div class="icon">
-        <img src="/img/buy-comics-subscriptions.png" alt="">
-        <span>SUBSCRIPTION</span>
-    </div>
-
-     <div class="icon">
-        <img src="/img/buy-comics-shop-locator.png" alt="">
-        <span>COMIC SHOP LOCATOR</span>
-    </div>
-
-     <div class="icon">
-        <img src="/img/buy-dc-power-visa.svg" class="visa" alt="">
-        <span>DC POWER VISA</span>
-    </div>
+        <div v-for="option in options" class="icon">
+        <img :src="option.image" alt="">
+        <span>{{ option.title }}</span>
+        </div>
+        
     </div>
      </div>
 

@@ -61,6 +61,7 @@ export default{
 <style>
 .container4{
   max-width: 1200px;
+  height: 370px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -70,8 +71,8 @@ export default{
  #top-footer{
     border: 1px white solid;
     background-image: url("/img/footer-bg.jpg");
-    background-size: cover;
-    background-position: center;
+     background-position: center;
+     background-size: cover;
  }
 
  .list{
