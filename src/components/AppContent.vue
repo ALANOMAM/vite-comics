@@ -96,6 +96,12 @@ export default{
 <template>
     <div id="content">
 
+    <div class="current-series">
+
+      <button>CURRENT SERIES</button>
+    </div>   
+        
+
     <div class="container2"> 
 
      <div class="dc-box">
@@ -105,14 +111,8 @@ export default{
       :comName="comic.series"
       :comImage="comic.thumb"
       >
+     </AppItem>   
     
-    </AppItem>   
-     <!-- 
-    <div v-for="comic in comics" class="dcItem">
-        <img  :src="comic.thumb" alt="">
-        <span>{{ comic.series }}</span>
-    </div>
-     -->
         </div>
 
   <button>LOAD MORE</button>
@@ -124,6 +124,13 @@ export default{
 
 <style lang="scss">
 $primaryColor:rgba(2, 130, 249, 1);
+
+.current-series{
+    height: 400px;
+    border: 1px white solid;
+    background-image: url("../../public/img/jumbotron.jpg"); //altro modo per ricavare l'immagine oltre a "/img/jumbotron.jpg"
+    background-size: cover;
+}
 
 .container2{
   max-width: 1200px;
