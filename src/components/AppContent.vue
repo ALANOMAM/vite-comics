@@ -108,16 +108,18 @@ export default{
 </template>
 
 <style lang="scss">
+$primaryColor:rgba(2, 130, 249, 1);
 
 .dcItem{
   width: calc(100% / 6);  
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap:10px;
 
     img{
         width:100%;
-        height:auto;
+        height:200px;
     }
 }
   
@@ -127,11 +129,21 @@ export default{
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button{
+    padding: 10px 30px;
+    background-color: $primaryColor;
+    color: white;
+    border: 1px solid $primaryColor;
+    margin-bottom: 20px;
+  }
 }
 
 .dc-box{
   display:flex ;
-  gap: 10px;
   flex-wrap: wrap;
 }
 /*
