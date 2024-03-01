@@ -91,19 +91,48 @@ export default{
 <template>
     <div id="content">
 
-    <div class="container2">  
-  <h1> content goes here </h1>
+    <div class="container2"> 
+
+     <div class="dc-box">
+    <div v-for="comic in comics" class="dcItem">
+        <img  :src="comic.thumb" alt="">
+        <span>{{ comic.series }}</span>
+    </div>
+        </div>
+
+  <button>LOAD MORE</button>
     </div>
 
      </div>
 
 </template>
 
-<style>
+<style lang="scss">
+
+.dcItem{
+  width: calc(100% / 6);  
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+
+    img{
+        width:100%;
+        height:auto;
+    }
+}
+  
+  
+
 .container2{
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.dc-box{
+  display:flex ;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 /*
  #content{

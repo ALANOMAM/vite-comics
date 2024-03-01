@@ -17,7 +17,7 @@ export default{
     <div id="bottom-footer">
         <div class="container5">
 
-       <button>SIGN-UP NOW!</button>
+       <button class="btn">SIGN-UP NOW!</button>
 
         <div class="socials">
             <span>FOLLOW US</span>
@@ -50,7 +50,7 @@ $primaryColor:rgba(2, 130, 249, 1);
     border: 1px white solid;
  }*/
 
- button{
+ .btn{
     padding: 10px;
     font-size: 20px;
     border: 2px solid $primaryColor;
