@@ -2,11 +2,18 @@
 
 export default{
     name:"AppBottomFooter",
+
   
   data(){
     
     return{
-
+        socialMedia:[
+        "/img/footer-facebook.png",
+        "/img/footer-twitter.png",
+        "/img/footer-youtube.png",
+        "/img/footer-pinterest.png",
+        "/img/footer-periscope.png"
+        ]
     }
   }
 
@@ -21,11 +28,9 @@ export default{
 
         <div class="socials">
             <span>FOLLOW US</span>
-            <img src="/img/footer-facebook.png" alt="">
-            <img src="/img/footer-twitter.png" alt="">
-            <img src="/img/footer-youtube.png" alt="">
-            <img src="/img/footer-pinterest.png" alt="">
-            <img src="/img/footer-periscope.png" alt="">
+            <div v-for="social in socialMedia">
+                <img :src="social" alt="">
+            </div>
         </div>
 
         </div>
