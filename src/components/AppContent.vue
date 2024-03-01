@@ -1,6 +1,11 @@
 <script>
+ import AppItem from './AppItem.vue';
 
 export default{
+   components:{
+     AppItem
+   },
+
     name:"AppContent",
   
   data(){
@@ -94,10 +99,20 @@ export default{
     <div class="container2"> 
 
      <div class="dc-box">
+
+      <AppItem 
+      v-for="comic in comics"
+      :comName="comic.series"
+      :comImage="comic.thumb"
+      >
+    
+    </AppItem>   
+     <!-- 
     <div v-for="comic in comics" class="dcItem">
         <img  :src="comic.thumb" alt="">
         <span>{{ comic.series }}</span>
     </div>
+     -->
         </div>
 
   <button>LOAD MORE</button>
@@ -109,21 +124,6 @@ export default{
 
 <style lang="scss">
 $primaryColor:rgba(2, 130, 249, 1);
-
-.dcItem{
-  width: calc(100% / 6);  
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap:10px;
-
-    img{
-        width:100%;
-        height:200px;
-    }
-}
-  
-  
 
 .container2{
   max-width: 1200px;
