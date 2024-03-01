@@ -4,10 +4,23 @@ export default{
     name:"AppHeader",
   
   data(){
-    
+      
     return{
+     activeLinkIndex:0,
+
      links:["CHARACTERS","COMICS","MOVIES","TV","GAMES","COLLECTIBLES","VIDEOS","FANS","NEWS","SHOP"]
 
+    }
+  },
+
+  methods:{
+    //questo metodo mi mette in collegamento l'indice che clicco con l'active index  
+    //grazie a questo procedimento, la condizione per l'aggiunta della classe "Active"
+    //nelle righe sotto sarà rispettata e tutti e meccanismi legati alla classe "Active"
+    //entreranno in gioco
+    evidenzia(linkIdex){
+        this.activeLinkIndex = linkIdex
+        console.log(this.activeLinkIndex)
     }
   }
 
@@ -21,7 +34,7 @@ export default{
 <img src="/img/dc-logo.png" alt="dc_logo">
 
 <ul>
-    <li v-for="link in links" class="link">{{link}}</li>
+    <li v-for="(link, index) in links"   :class=" index == activeLinkIndex ? 'Active' : ''"  @mouseover="evidenzia(index)" >{{link}}</li>
 </ul>
   </div>
     </header>
@@ -51,16 +64,36 @@ justify-content: space-between;
     list-style-type: none;
     display: flex;
     gap: 30px;
-
-    .link{
-    font-weight: bolder;
-   }
    
- 
- .link:active{
-     color:$primaryColor;
-    }
+
  }
+
+ li{
+    position: relative;
+    font-weight: bolder;
+ }
+
+ 
+    //e questa classe Active che mi aggiunge il comportamento in hover e il blocco blue sotto 
+    //l'elemento, questa classe si aggiunge solo alla condizione stabilita sopra
+    .Active:hover{
+     color:$primaryColor;
+
+    &::after{
+    content: '';
+    height: 10px;
+    width: 100%;
+    background-color:$primaryColor;
+    position: absolute;
+    top:50px;
+    left: 0px;
+   }
+
+    }
+
+
+
+
 
  
 </style>
