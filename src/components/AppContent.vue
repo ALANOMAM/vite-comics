@@ -127,12 +127,23 @@ $primaryColor:rgba(2, 130, 249, 1);
 
 .current-series{
     height: 400px;
-    border: 1px white solid;
+     /*border: 1px white solid;*/
     background-image: url("../../public/img/jumbotron.jpg"); //altro modo per ricavare l'immagine oltre a "/img/jumbotron.jpg"
     background-size: cover;
+
+    button{
+        margin-top: 375px;
+        margin-left: 160px;
+        padding: 10px 30px;
+        font-size: 20px;
+        background-color: $primaryColor;
+        color: white;
+        border: 1px solid $primaryColor;
+    }
 }
 
 .container2{
+    margin-top: 30px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
